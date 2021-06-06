@@ -1,5 +1,5 @@
 insert into position (id, description, director_birth_date, director_name, director_surname, duration, genre, release_date,
-                   score, thumbnail, title, uuid, position_type)
+                      score, thumbnail, title, uuid, position_type)
 values (1,
         'In a post-apocalyptic world, a family is forced to live in silence while hiding from monsters with ultra-sensitive hearing.',
         '1979-10-20', 'John', 'Krasinski', 5400000000000, 'HORROR', '2018-04-13', 7.50,

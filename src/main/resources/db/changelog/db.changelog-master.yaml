@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: maciek
+      changes:
+        - sqlFile:
+            path: db/changelog/changes-1.0.0.sql
+  - changeSet:
+      id: 2
+      author: maciek
+      context: dev
+      changes:
+        - sqlFile:
+            path: db/changelog/test-data.sql
