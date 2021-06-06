@@ -4,7 +4,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
-import org.springframework.lang.Nullable;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
@@ -25,9 +24,8 @@ public class MovieController {
     }
 
     @GetMapping("/api/movies")
-    public Page<MovieOverview> getMovies(@RequestParam Optional<String> title, Pageable pageable) {
-        return title.map(t -> movieRepository.findAllByTitleContaining(t, pageable))
-                .orElseGet(() -> movieRepository.findAllProjectedBy(pageable));
+    public Page<MovieOverview> getMovies(MovieSearch movieSearch, Pageable pageable) {
+        return movieRepository.findAllProjectedBy(movieSearch.asSpecification(), pageable);
     }
 
     @GetMapping("/api/popular-movies")
