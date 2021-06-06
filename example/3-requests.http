@@ -1,0 +1,30 @@
+GET http://localhost:8080/api/movies?size=3&page=0&sort=releaseDate,asc
+
+###
+GET http://localhost:8080/api/movies?size=3&page=0&sort=releaseDate,desc
+
+###
+GET http://localhost:8080/api/movies?title=r
+
+###
+GET http://localhost:8080/api/popular-movies
+
+###
+PUT http://localhost:8080/api/movies/1
+Content-Type: application/json
+
+{
+  "title": "Ciche miejsce",
+  "description": "W postapokaliptycznym świecie rodzina zmuszona jest żyć w ciszy, ukrywając się przed potworami o bardzo czułym słuchu.",
+  "genre": "COMEDY",
+  "duration": "PT1H30M",
+  "releaseDate": "2018-04-13",
+  "score": "9.9",
+  "thumbnail": "https://thumbnails.com/ciche-place",
+  "director": {
+    "name": "John",
+    "surname": "Krasinski",
+    "birthDate": "1979-10-20"
+  }
+}
+

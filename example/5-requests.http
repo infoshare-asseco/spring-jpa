@@ -1,0 +1,33 @@
+POST http://localhost:8080/api/screens/12/lanes
+Content-Type: application/json
+
+{
+  "title": "Moja lista"
+}
+
+###
+POST http://localhost:8080/api/screens/12/lanes
+Content-Type: application/json
+
+{
+  "title": "Top 10"
+}
+
+###
+POST http://localhost:8080/api/screens/12/lanes
+Content-Type: application/json
+
+{
+  "title": "Popularne Teraz"
+}
+
+###
+GET http://localhost:8080/api/lanes/13/screen
+
+###
+DELETE http://localhost:8080/api/screens/12/lanes/14
+
+###
+DELETE http://localhost:8080/api/screens/12
+
+###

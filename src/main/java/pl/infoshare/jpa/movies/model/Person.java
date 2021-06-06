@@ -1,7 +1,5 @@
 package pl.infoshare.jpa.movies.model;
 
-import lombok.Data;
-
 import javax.persistence.Embeddable;
 import java.time.LocalDate;
 

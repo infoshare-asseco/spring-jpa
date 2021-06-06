@@ -1,13 +1,11 @@
 package pl.infoshare.jpa.movies.model;
 
-import lombok.Value;
 
 import java.math.BigDecimal;
 import java.net.URL;
 import java.time.Duration;
 import java.time.LocalDate;
 
-@Value
 public class MovieUpdateRequest {
 
     String title;
