@@ -1,4 +1,4 @@
-package pl.infoshare.jpa.movies;
+package pl.infoshare.jpa.movies.model;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -18,6 +18,8 @@ public class Movie {
 
     private String title;
     private String description;
+
+    @Enumerated(EnumType.STRING)
     private Genre genre;
     private Duration duration;
     private LocalDate releaseDate;
