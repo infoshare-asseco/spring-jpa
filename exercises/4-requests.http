@@ -1,0 +1,19 @@
+GET http://localhost:8080/api/movies?title=Quiet
+
+###
+GET http://localhost:8080/api/movies?genre=THRILLER
+
+###
+GET http://localhost:8080/api/movies?minDate=2010-01-01
+
+###
+GET http://localhost:8080/api/movies?maxDate=2010-01-01
+
+###
+GET http://localhost:8080/api/movies?minScore=7.5
+
+###
+GET http://localhost:8080/api/movies?maxScore=7.5
+
+###
+GET http://localhost:8080/api/movies?title=Quiet&genre=HORROR&maxScore=9.0&minScore=1.0&minDate=1900-01-01&maxDate=2021-01-01
